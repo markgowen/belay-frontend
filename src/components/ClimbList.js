@@ -1,9 +1,10 @@
 import React from 'react';
-import Climb from "./Climb";
+import ClimbCard from "./ClimbCard";
 
 function ClimbList({ climbs }) {
     const climbList = climbs.map((climb) => (
-        <Climb
+        <ClimbCard
+            key={climb.id}
             name={climb.name}
             rating={climb.rating}
             location={climb.location}

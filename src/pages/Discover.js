@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ClimbList from "../components/ClimbList"
+import ClimbList from "../components/ClimbList";
+import canyonClimber from "../assets/images/canyonClimber.jpg"
+
 
 function Discover() {
     const [climbs, setClimbs] = useState([]);
@@ -12,9 +14,14 @@ function Discover() {
     }, []);
 
     return (
-        <div>
-            <ClimbList climbs={climbs} />
-        </div>
+        <>
+            {/* <div>
+                <img src={canyonClimber} alt="climber" />
+            </div> */}
+            <div className='discover'>
+                <ClimbList climbs={climbs} />
+            </div>
+        </>
     );
 }
 

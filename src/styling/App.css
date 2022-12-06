@@ -18,3 +18,22 @@ body {
     align-items: center;
     list-style: none;
 }
+
+.discover {
+    background-color: #1e1e1e;
+    background: url(../assets/images/Vector.png);
+}
+.card {
+    display: flex;
+    margin:  25px auto;
+    /* max-width: 1000px; */
+    /* max-height: 265px; */
+}
+
+.cardHead {
+    display: flex;
+}
+
+.cardLocation {
+    margin-top: -8px;
+}
