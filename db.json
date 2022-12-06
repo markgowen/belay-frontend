@@ -1,0 +1,119 @@
+{
+    "climbs": [
+      {
+        "id": 1,
+        "name": "The Nose",
+        "rating": 5,
+        "location": "Yosemite, California",
+        "difficulty": "5.14a",
+        "elevation": "3000 ft",
+        "type": "Trad",
+        "length": "31 pitches",
+        "image": "https://unsplash.com/photos/KMMR__2LEQY"
+      },
+      {
+        "id": 2,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "name": "",
+        "rating": 5,
+        "location": "",
+        "difficulty": "",
+        "elevation": "",
+        "type": "",
+        "length": "",
+        "image": ""
+      }
+    ],
+    "reviews": [
+      {
+        "review": ""
+      }
+    ]
+  }
