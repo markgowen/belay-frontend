@@ -5,18 +5,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Icon from "../assets/logos/Icon.png";
+import ClimbDetails from "./ClimbDetails";
+import {Link} from "react-router-dom";
 
 
 function ClimbCard({ 
     name, 
     rating, 
     location, 
-    difficulty, 
-    elevation, 
-    type, 
-    pitches,
+    difficulty,
     image,
-    description
+    description,
+    climb
     }) 
     {
 
@@ -24,7 +24,6 @@ function ClimbCard({
         const createRating = []
         const newNumber= parseInt(rating)
         for(let i = 0; i < newNumber; i++){
-            const item = newNumber[i]
             createRating.push(<img src={Icon} alt={rating} />)
             }
         return createRating
@@ -32,7 +31,7 @@ function ClimbCard({
 
 
     return (
-        <div className="bg">
+        <Link to={`/discover/${climb.id}`} className="bg">
             <Card 
                     className="card" 
                     sx={{ 
@@ -86,7 +85,7 @@ function ClimbCard({
             </CardContent>
             </CardActionArea>
         </Card>
-      </div>
+      </Link>
     )
 };
 
