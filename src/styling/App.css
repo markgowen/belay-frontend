@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.discover {
+    position: relative;
+    background-color: #1e1e1e;
+    background: url(../assets/images/Vector.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.card {
+    display: flex;
+    margin:  25px auto;
+    /* max-width: 1000px; */
+    /* max-height: 265px; */
+}
+
+.cardHead {
+    display: flex;
+}
+
+.cardLocation {
+    margin-top: -8px;
+}
+
+.discover-hero {
+    position: relative;
+    background: url(../assets/images/canyonClimber.jpg);
+    width: 100%;
+}
