@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Icon from "../assets/logos/Icon.png";
 
 
 function ClimbCard({ 
@@ -16,7 +17,20 @@ function ClimbCard({
     pitches,
     image,
     description
-    }) {
+    }) 
+    {
+
+    function carabiners(){
+        const createRating = []
+        const newNumber= parseInt(rating)
+        for(let i = 0; i < newNumber; i++){
+            const item = newNumber[i]
+            createRating.push(<img src={Icon} alt={rating} />)
+            }
+        return createRating
+        }
+
+
     return (
         <div className="bg">
             <Card 
@@ -55,7 +69,7 @@ function ClimbCard({
                             }}  
                     gutterBottom variant="p" 
                     component="div">
-                        {rating}
+                        {carabiners()}
                     </Typography>
                 </div>
                 <div className="cardLocation">
