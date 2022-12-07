@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .NavBar {
@@ -24,17 +24,16 @@ body {
 }
 
 .discover {
-    position: relative;
     background-color: #1e1e1e;
-    background: url(../assets/images/Vector.png);
-    background-size: cover;
+    /* background: url(../assets/images/background.png); */
+    background-size: 100%;
     
 }
+
 .card {
     display: flex;
-    margin:  25px auto;
-    /* max-width: 1000px; */
-    /* max-height: 265px; */
+    margin: 25px auto;
+
 }
 
 .cardHead {
@@ -43,10 +42,4 @@ body {
 
 .cardLocation {
     margin-top: -8px;
-}
-
-.discover-hero {
-    position: relative;
-    background: url(../assets/images/canyonClimber.jpg);
-    width: 100%;
 }
