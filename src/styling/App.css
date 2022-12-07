@@ -82,3 +82,26 @@ nav .active {
 .cardLocation {
     margin-top: -8px;
 }
+
+.climb-details-middle {
+    margin: 25px auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gainsboro;
+}
+
+.climb-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #FF8A00;
+    color: white;
+    border: none;
+    outline: 0;
+}
