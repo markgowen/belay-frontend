@@ -16,6 +16,16 @@ body {
     width: 100px;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav .active {
+    color: #FF8A00; 
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -30,10 +40,39 @@ body {
     
 }
 
+.search-container {
+    height: 30px;
+    width: 100%;
+    padding: 25px 23px 25px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    color: #fff;
+    padding: 10px;
+}
+
+.search-input {
+    color: #fff;
+    width: 365px;
+    background: transparent;
+    border-bottom: solid #fff 1px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    outline: none;
+}
+
+.search-icon {
+    padding: 10px;
+    width: 16px;
+}
+
 .card {
     display: flex;
     margin: 25px auto;
-
 }
 
 .cardHead {
@@ -42,4 +81,27 @@ body {
 
 .cardLocation {
     margin-top: -8px;
+}
+
+.climb-details-middle {
+    margin: 25px auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gainsboro;
+}
+
+.climb-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #FF8A00;
+    color: white;
+    border: none;
+    outline: 0;
 }

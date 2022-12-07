@@ -1,6 +1,7 @@
 import React from 'react';
 import ClimbCard from "./ClimbCard";
 
+
 function ClimbList({ climbs }) {
     const climbList = climbs.map((climb) => (
         <ClimbCard
