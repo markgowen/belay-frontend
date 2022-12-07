@@ -5,7 +5,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Icon from "../assets/logos/Icon.png";
-import ClimbDetails from "./ClimbDetails";
 import {Link} from "react-router-dom";
 
 
@@ -20,7 +19,7 @@ function ClimbCard({
     }) 
     {
 
-    function carabiners(){
+    function ClimbRatingIcon(){
         const createRating = []
         const newNumber= parseInt(rating)
         for(let i = 0; i < newNumber; i++){
@@ -68,7 +67,7 @@ function ClimbCard({
                             }}  
                     gutterBottom variant="p" 
                     component="div">
-                        {carabiners()}
+                        {ClimbRatingIcon()}
                     </Typography>
                 </div>
                 <div className="cardLocation">
