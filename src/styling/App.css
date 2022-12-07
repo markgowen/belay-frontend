@@ -12,6 +12,10 @@ body {
     color: #fff;
 }
 
+.logo {
+    width: 100px;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -20,8 +24,11 @@ body {
 }
 
 .discover {
+    position: relative;
     background-color: #1e1e1e;
     background: url(../assets/images/Vector.png);
+    background-size: 100%;
+    background-repeat: repeat;
 }
 .card {
     display: flex;
@@ -36,4 +43,10 @@ body {
 
 .cardLocation {
     margin-top: -8px;
+}
+
+.discover-hero {
+    position: relative;
+    background: url(../assets/images/canyonClimber.jpg);
+    width: 100%;
 }

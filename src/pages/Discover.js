@@ -15,9 +15,9 @@ function Discover() {
 
     return (
         <>
-            {/* <div>
-                <img src={canyonClimber} alt="climber" />
-            </div> */}
+            <div className="discover-hero">
+                
+            </div>
             <div className='discover'>
                 <ClimbList climbs={climbs} />
             </div>
