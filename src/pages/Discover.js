@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ClimbList from "../components/ClimbList";
-import canyonClimber from "../assets/images/canyonClimber.jpg"
-
+import Search from "../components/Search"
 
 function Discover() {
     const [climbs, setClimbs] = useState([]);
@@ -13,10 +12,14 @@ function Discover() {
         .then(climbs => setClimbs(climbs))
     }, []);
 
+    const filteredClimbs = climbs.filter((climb) => {
+        return climb.name.toLowerCase().includes(query.toLowerCase())
+    })
+
     return (
-        
             <div className='discover'>
-                <ClimbList climbs={climbs} />
+                <Search query={query} setQuery={setQuery} />
+                <ClimbList climbs={filteredClimbs} />
             </div>
         
     );

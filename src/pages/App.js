@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
       <Router>
-        <div>
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
@@ -18,7 +17,6 @@ function App() {
             <Route path="/climb" exact component={Climb} />
             <Route path="/share" exact component={Share} />
           </Switch>
-        </div>
       </Router>
   );
 }
