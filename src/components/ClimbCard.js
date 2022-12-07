@@ -19,7 +19,7 @@ function ClimbCard({
     }) 
     {
 
-    function carabiners(){
+    function ClimbRatingIcon(){
         const createRating = []
         const newNumber= parseInt(rating)
         for(let i = 0; i < newNumber; i++){
@@ -67,7 +67,7 @@ function ClimbCard({
                             }}  
                     gutterBottom variant="p" 
                     component="div">
-                        {carabiners()}
+                        {ClimbRatingIcon()}
                     </Typography>
                 </div>
                 <div className="cardLocation">
