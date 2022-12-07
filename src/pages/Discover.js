@@ -14,14 +14,11 @@ function Discover() {
     }, []);
 
     return (
-        <>
-            <div className="discover-hero">
-                
-            </div>
+        
             <div className='discover'>
                 <ClimbList climbs={climbs} />
             </div>
-        </>
+        
     );
 }
 
