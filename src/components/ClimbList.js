@@ -9,11 +9,10 @@ function ClimbList({ climbs }) {
             rating={climb.rating}
             location={climb.location}
             difficulty={climb.difficulty}
-            elevation={climb.elevation}
-            type={climb.type}
-            pitches={climb.pitches}
             image={climb.image}
-            description={climb.description} />
+            description={climb.description}
+            climb={climb}
+             />
     ))
     return (
         <div>
