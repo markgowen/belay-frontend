@@ -18,6 +18,7 @@ function Discover() {
 
     return (
             <div className='discover'>
+                
                 <Search query={query} setQuery={setQuery} />
                 <ClimbList climbs={filteredClimbs} />
             </div>
