@@ -61,7 +61,7 @@ nav .active {
 }
 
 .middle-section{
-    height: 150vh;
+    height: 165vh;
     background-color: #1e1e1e;
 }
 
@@ -76,6 +76,34 @@ nav .active {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom-logo img {
+    width: 500px;
+    margin-left: 220px;
+    margin-top: 160px;
+}
+
+.bottom-section {
+    padding-top: 100px;
+    padding-left: 200px;
+    color: white;
+    justify-content: center;
+    width: 200px;
+    float: left;
+}
+
+.bottom-section h3 {
+    font-size: 36px;
+}
+
+.bottom-section p {
+    font-size: 16px;
+    padding-bottom: 25px;
 }
 
 .discover {
