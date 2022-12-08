@@ -52,7 +52,7 @@ function ClimbForm() {
     return (
         <Box
             component="form"
-            sx={{ margin: "auto", marginTop: 25, maxWidth: '70%'}}
+            sx={{ margin: "auto", marginTop: 10, maxWidth: '70%'}}
             autoComplete="off"
             onSubmit={handleSubmit}
         >
@@ -91,6 +91,18 @@ function ClimbForm() {
             />
           </div>
           <div>
+          <div>
+            <TextField
+              helperText="Image URL"
+              name="image"
+              id="standard-size-normal"
+              value={formValues.image}
+              onChange={handleChange}
+              noValidate
+              variant="standard"
+              sx={{ width: "50%" }}
+            />
+          </div>
             <TextField
               id="standard-number"
               helperText="Elevation"
@@ -108,6 +120,26 @@ function ClimbForm() {
               onChange={handleChange}
               noValidate
               variant="standard"
+              sx={{ paddingRight: 5 }}
+            />
+            <TextField
+              helperText="Pitches"
+              name="pitches"
+              id="standard-size-normal"
+              value={formValues.pitches}
+              onChange={handleChange}
+              noValidate
+              variant="standard"
+              sx={{ paddingRight: 5 }}
+            />
+            <TextField
+              helperText="Rate"
+              name="rating"
+              id="standard-size-normal"
+              value={formValues.rating}
+              onChange={handleChange}
+              noValidate
+              variant="standard"
             />
           </div>
           <div>
@@ -116,7 +148,7 @@ function ClimbForm() {
               select
               label="Select"
               name="type"
-              sx={{ color: "#1e1e1e", width: "25%", marginBottom: 5 }}
+              sx={{ color: "#1e1e1e", width: "10%", marginBottom: 5 }}
               value={formValues.type}
               onChange={handleChange}
               helperText=""
