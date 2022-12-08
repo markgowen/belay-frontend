@@ -52,7 +52,7 @@ function ClimbForm() {
     return (
         <Box
             component="form"
-            sx={{ margin: "auto", marginTop: 50, maxWidth: '70%'}}
+            sx={{ margin: "auto", marginTop: 25, maxWidth: '70%'}}
             autoComplete="off"
             onSubmit={handleSubmit}
         >
