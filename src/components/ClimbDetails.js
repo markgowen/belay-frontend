@@ -8,14 +8,34 @@ import { CardActionArea } from '@mui/material';
 
 function ClimbDetails() {
     const [climb, setClimb] = useState({});
+    const [reviews, setReviews] = useState([])
 
-    const {id} = useParams();
+    const {id} = useParams('');
 
     useEffect(() => {
         fetch(`http://localhost:3001/climbs/${id}`)
         .then((response) => response.json())
         .then((climb) => setClimb(climb))
     }, [id])
+
+    useEffect(()=>{
+        fetch(`http://localhost:3001/reviews`)
+        .then(res => res.json())
+        .then(data => {
+            setReviews(data)
+        })
+    }, [])
+
+    const filter = reviews.filter((review) => review.climbId == id ? review: null)
+    const createReviews = filter.map(review => {
+                                        return(
+                                            <div>
+                                                <h3>{review.UserName}</h3>
+                                                <h4>{review.date}</h4>
+                                                <p>{review.content}</p>
+                                            </div>
+                                            )
+                                            })
 
     return (
         <Card sx={{ maxWidth: 1000, display: "flex", margin: 'auto', marginTop: 10 }}>
@@ -63,6 +83,9 @@ function ClimbDetails() {
                 <div className='reviews-section'>
                     <h2>Reviews</h2>
                     <button>Write Review</button>
+                    <div>
+                        {createReviews}
+                    </div>
                 </div>
             </CardContent>
       </CardActionArea>

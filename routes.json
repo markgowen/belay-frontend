@@ -1,0 +1,3 @@
+{
+  "/climbs/:id": "/climbs/:id?_embed=reviews"
+}
