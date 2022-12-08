@@ -33,6 +33,51 @@ nav .active {
     list-style: none;
 }
 
+.hero {
+    display: flex;
+    background-image: url("/src/assets/images/hero.jpg");
+    height: 695px;
+    background-size: cover;
+    background-position: center;
+}
+.hero h1 {
+    margin-right: 25px;
+    padding-left: 950px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.secondary-hero {
+    margin: 25px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-section{
+    height: 150vh;
+    background-color: #1e1e1e;
+}
+
+.middle img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.middle-section img {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .discover {
     background-color: #1e1e1e;
     /* background: url(../assets/images/background.png); */
