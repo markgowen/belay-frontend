@@ -71,3 +71,5 @@ function ClimbDetails() {
 }
 
 export default ClimbDetails;
+
+

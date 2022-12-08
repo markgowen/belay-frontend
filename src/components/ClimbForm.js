@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+import Box from "@mui/material/Box";
+import TextField from '@mui/material/TextField';
+import MenuItem from '@mui/material/MenuItem';
+import Button from '@mui/material/Button';
 
 function ClimbForm() {
     const [formValues, setFormValues] = useState({
@@ -12,6 +16,21 @@ function ClimbForm() {
             image: "",
             description: ""
     })
+
+    const type = [
+        {
+          value: 'Sport',
+          label: 'Sport'
+        },
+        {
+          value: 'Trad',
+          label: 'Trad'
+        },
+        {
+          value: 'Ice',
+          label: 'Ice'
+        }
+      ];
 
     const handleChange = (e) => {
         setFormValues({...formValues, [e.target.name]: e.target.value})
@@ -28,22 +47,76 @@ function ClimbForm() {
         .then(data => console.log(data))
     }
     
-
     return (
-        <div>
-            <form onSubmit={handleSubmit} >
-                <input name="name" value={formValues.name} placeholder="name" onChange={handleChange}></input>
-                <input name="rating" value={formValues.rating} placeholder="rating" onChange={handleChange}></input>
-                <input name="location" value={formValues.location} placeholder="location" onChange={handleChange}></input>
-                <input name="difficulty" value={formValues.difficulty} placeholder="difficulty" onChange={handleChange}></input>
-                <input name="elevation" value={formValues.elevation} placeholder="elevation" onChange={handleChange}></input>
-                <input name="type" value={formValues.type} placeholder="type" onChange={handleChange}></input>
-                <input name="pitches" value={formValues.pitches} placeholder="pitches" onChange={handleChange}></input>
-                <input name="image" value={formValues.image} placeholder="image" onChange={handleChange}></input>
-                <input name="description" value={formValues.description} placeholder="description" onChange={handleChange}></input>
-                <button>Submit This Shit</button>
-            </form>
-        </div>
+        <Box
+            component="form"
+            sx={{ '& > :not(style)': { m: 1, width: '25ch' }, }}
+            autoComplete="off"
+            onSubmit={handleSubmit}
+        >
+        <TextField
+          label="Route Name"
+          id="standard-size-normal"
+          value={formValues.name}
+          onChange={handleChange}
+          variant="standard"
+        />
+        <TextField
+          label="Location"
+          id="standard-size-normal"
+          value={formValues.location}
+          onChange={handleChange}
+          noValidate
+          defaultValue=""
+          variant="standard"
+        />
+        <TextField
+          id="standard-multiline-flexible"
+          label="Description"
+          multiline
+          maxRows={4}
+          value={formValues.description}
+          onChange={handleChange}
+          variant="standard"
+        />
+         <TextField
+          id="standard-number"
+          label="Elevation"
+          value={formValues.elevation}
+          onChange={handleChange}
+          type="number"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          variant="standard"
+        />
+        <TextField
+          label="Grade"
+          id="standard-size-normal"
+          value={formValues.difficulty}
+          onChange={handleChange}
+          noValidate
+          defaultValue="5.10b"
+          variant="standard"
+        />
+        <TextField
+          id="standard-select-currency"
+          select
+          label="Select"
+          sx={{ color: "#1e1e1e" }}
+          value={type}
+          onChange={handleChange}
+          helperText=""
+          variant="standard"
+        >
+          {type.map((option) => (
+            <MenuItem key={option.value} value={option.value}>
+              {option.label}
+            </MenuItem>
+          ))}
+        </TextField>
+        <Button sx={{ backgroundColor: "#FF8A00" }} variant="contained">Sumbit</Button>
+        </Box>
     );
 };
 

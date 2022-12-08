@@ -4,7 +4,7 @@ import ClimbForm from '../components/ClimbForm';
 function Share() {
     return (
         <div>
-            {ClimbForm}
+            <ClimbForm />
         </div>
     );
 };
