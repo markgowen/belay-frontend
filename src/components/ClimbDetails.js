@@ -5,12 +5,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Reviews from './Reviews';
+import Icon from "../assets/logos/Icon.png";
 
 function ClimbDetails() {
+    const {id} = useParams('');
+
     const [climb, setClimb] = useState({});
     const [reviews, setReviews] = useState([])
-
-    const {id} = useParams('');
+    const [isClicked, setIsClicked] = useState(false)
 
     useEffect(() => {
         fetch(`http://localhost:3001/climbs/${id}`)
@@ -37,6 +40,19 @@ function ClimbDetails() {
                                             )
                                             })
 
+    const handleClick = () =>{
+        setIsClicked(!isClicked);
+    }
+
+    function ClimbRatingIcon(){
+        const createRating = []
+        const newNumber= parseInt(climb.rating)
+        for(let i = 0; i < newNumber; i++){
+            createRating.push(<img src={Icon} alt={climb.rating} />)
+            }
+        return createRating
+        }
+
     return (
         <Card sx={{ maxWidth: 1000, display: "flex", margin: 'auto', marginTop: 10 }}>
             <CardActionArea>
@@ -52,7 +68,7 @@ function ClimbDetails() {
                         {climb.name}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div">
-                        {climb.rating}
+                        {ClimbRatingIcon()}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div">
                         {climb.location}
@@ -81,9 +97,10 @@ function ClimbDetails() {
                     </Typography>
                 </div>
                 <div className='reviews-section'>
-                    <h2>Reviews</h2>
-                    <button>Write Review</button>
+                    <button onClick={handleClick}> Write a Review</button>
+                    {isClicked == true ? <Reviews id={id} route={climb.name} setReviews={setReviews} reviews={reviews}/>: null}
                     <div>
+                        <h2>Reviews</h2>
                         {createReviews}
                     </div>
                 </div>
