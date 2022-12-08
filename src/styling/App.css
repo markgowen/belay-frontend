@@ -105,3 +105,14 @@ button {
     border: none;
     outline: 0;
 }
+
+.form-line-one {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* .form-line-two {
+    width: 2000%;
+} */

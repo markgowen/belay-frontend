@@ -38,6 +38,7 @@ function ClimbForm() {
     }
 
     const handleSubmit = (e) => {
+        console.log("Fired")
         e.preventDefault()
         fetch('http://localhost:3001/climbs', {
             method: 'POST',
@@ -51,71 +52,84 @@ function ClimbForm() {
     return (
         <Box
             component="form"
-            sx={{ '& > :not(style)': { m: 1, width: '25ch' }, }}
+            sx={{ margin: "auto", marginTop: 50, maxWidth: '70%'}}
             autoComplete="off"
             onSubmit={handleSubmit}
         >
-          <TextField
-            helperText="Route Name"
-            name="name"
-            defaultValue={formValues.name}
-            id="standard-size-normal"
-            onChange={handleChange}
-            variant="standard"
-          />
-          <TextField
-            helperText="Location"
-            id="standard-size-normal"
-            value={formValues.location}
-            onChange={handleChange}
-            noValidate
-            variant="standard"
-          />
-          <TextField
-            id="standard-multiline-flexible"
-            helperText="Description"
-            multiline
-            maxRows={4}
-            value={formValues.description}
-            onChange={handleChange}
-            variant="standard"
-          />
-          <TextField
-            id="standard-number"
-            helperText="Elevation"
-            value={formValues.elevation}
-            onChange={handleChange}
-            type="number"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            variant="standard"
-          />
-          <TextField
-            helperText="Grade"
-            id="standard-size-normal"
-            value={formValues.difficulty}
-            onChange={handleChange}
-            noValidate
-            variant="standard"
-          />
-          <TextField
-            id="standard-select-currency"
-            select
-            label="Select"
-            sx={{ color: "#1e1e1e" }}
-            value={formValues.type}
-            onChange={handleChange}
-            helperText=""
-            variant="standard"
-          >
-            {type.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            ))}
-          </TextField>
-          <Button sx={{ backgroundColor: "#FF8A00" }} variant="contained">Sumbit</Button>
+          <div className='form-line-one'>
+            <TextField
+              helperText="Route Name"
+              name="name"
+              value={formValues.name}
+              id="standard-size-normal"
+              onChange={handleChange}
+              variant="standard"
+              sx={{ width: 2000, paddingRight: 5}}
+            />
+            <TextField
+              helperText="Location"
+              name="location"
+              id="standard-size-normal"
+              value={formValues.location}
+              onChange={handleChange}
+              noValidate
+              variant="standard"
+              sx={{ width: 2000 }}
+            />
+          </div>
+          <div>
+            <TextField
+              id="standard-multiline-flexible"
+              helperText="Description"
+              name="description"
+              multiline
+              maxRows={2}
+              value={formValues.description}
+              onChange={handleChange}
+              variant="standard"
+              sx={{ width: "100%" }}
+            />
+          </div>
+          <div>
+            <TextField
+              id="standard-number"
+              helperText="Elevation"
+              name="elevation"
+              value={formValues.elevation}
+              onChange={handleChange}
+              variant="standard"
+              sx={{ paddingRight: 5 }}
+            />
+            <TextField
+              helperText="Grade"
+              name="difficulty"
+              id="standard-size-normal"
+              value={formValues.difficulty}
+              onChange={handleChange}
+              noValidate
+              variant="standard"
+            />
+          </div>
+          <div>
+            <TextField
+              id="standard-select-currency"
+              select
+              label="Select"
+              name="type"
+              sx={{ color: "#1e1e1e", width: "25%", marginBottom: 5 }}
+              value={formValues.type}
+              onChange={handleChange}
+              helperText=""
+              variant="standard"
+            >
+              {type.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+          </div>
+          <Button sx={{ backgroundColor: "#FF8A00" }} variant="contained" type="submit" >Sumbit</Button>
         </Box>
     );
 };
