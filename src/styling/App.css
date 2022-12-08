@@ -113,6 +113,9 @@ button {
     /* align-items: center; */
 }
 
-/* .form-line-two {
-    width: 2000%;
-} */
+
+.new-route h1 {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
