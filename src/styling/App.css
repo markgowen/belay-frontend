@@ -40,6 +40,36 @@ nav .active {
     background-size: cover;
     background-position: center;
 }
+.columns {
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    margin: -65px auto;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.hero-column {
+    display: inline- block;
+    width: 20%;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+}
+.columns img {
+    justify-content: space-around;
+}
+.hero-icons {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-column p {
+    padding-bottom: 25px;
+}
 .hero h1 {
     margin-right: 25px;
     padding-left: 950px;
@@ -61,14 +91,15 @@ nav .active {
 }
 
 .middle-section{
-    height: 165vh;
+    height: 125vh;
     background-color: #1e1e1e;
 }
 
 .middle img {
     object-fit: cover;
+    background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 
 .middle-section img {
@@ -80,11 +111,12 @@ nav .active {
 
 .bottom {
     display: flex;
+    justify-content: center;
 }
 
 .bottom-logo img {
     width: 500px;
-    margin-left: 220px;
+    /* margin-left: 220px; */
     margin-top: 160px;
 }
 
