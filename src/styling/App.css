@@ -171,22 +171,12 @@ nav .active {
     justify-content: space-between;
     align-items: center;
 }
-
-button {
-    background-color: #FF8A00;
-    color: white;
-    border: none;
-    outline: 0;
-}
-
 .form-line-one {
     margin: 25px auto;
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
-
-
 .new-route h1 {
     margin: 50px auto;
     display: flex;

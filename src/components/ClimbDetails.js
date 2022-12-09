@@ -8,12 +8,12 @@ import { CardActionArea } from '@mui/material';
 import Reviews from './Reviews';
 import Icon from "../assets/logos/Icon.png";
 
+
 function ClimbDetails() {
     const {id} = useParams('');
 
     const [climb, setClimb] = useState({});
     const [reviews, setReviews] = useState([])
-    const [isClicked, setIsClicked] = useState(false)
 
     useEffect(() => {
         fetch(`http://localhost:3001/climbs/${id}`)
@@ -29,20 +29,16 @@ function ClimbDetails() {
         })
     }, [])
 
-    const filter = reviews.filter((review) => review.climbId == id ? review: null)
+    const filter = reviews.filter((review) => parseInt(review.climbId) === parseInt(id) ? review: null)
     const createReviews = filter.map(review => {
-                                        return(
-                                            <div>
-                                                <h3>{review.UserName}</h3>
-                                                <h4>{review.date}</h4>
-                                                <p>{review.content}</p>
-                                            </div>
-                                            )
-                                            })
-
-    const handleClick = () =>{
-        setIsClicked(!isClicked);
-    }
+        return(
+            <div>
+                <h3>{review.UserName}</h3>
+                <h4>{review.date}</h4>
+                <p>{review.content}</p>
+            </div>
+            )
+            })
 
     function ClimbRatingIcon(){
         const createRating = []
@@ -97,10 +93,9 @@ function ClimbDetails() {
                     </Typography>
                 </div>
                 <div className='reviews-section'>
-                    <button onClick={handleClick}> Write a Review</button>
-                    {isClicked == true ? <Reviews id={id} route={climb.name} setReviews={setReviews} reviews={reviews}/>: null}
                     <div>
                         <h2>Reviews</h2>
+                        <Reviews id={id} setReviews={setReviews} reviews={reviews}/>
                         {createReviews}
                     </div>
                 </div>
