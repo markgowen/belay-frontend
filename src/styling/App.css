@@ -43,7 +43,7 @@ nav .active {
 .columns {
     position: relative;
     z-index: 1;
-    height: 50vh;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     margin: -65px auto;
