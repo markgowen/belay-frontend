@@ -6,10 +6,9 @@ Belay is a single application focused on helping climbers discover new and excit
 
 Use the package manager [npm](https://www.npmjs.com/) to install belay.
 
-<aside>
-💡 `npm install`
-
-</aside>
+```jsk
+npm install 
+```
 
 ## GET
 
