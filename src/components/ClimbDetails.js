@@ -32,7 +32,7 @@ function ClimbDetails() {
     const filter = reviews.filter((review) => parseInt(review.climbId) === parseInt(id) ? review: null)
     const createReviews = filter.map(review => {
         return(
-            <div className='reviews-section' >
+            <div className='reviews-section' key={review.UserName} >
                 <ClimbRatingIcon />
                 <h3>{review.UserName}</h3>
                 <p className='date'>{review.date}</p>
@@ -45,7 +45,7 @@ function ClimbDetails() {
         const createRating = []
         const newNumber= parseInt(climb.rating)
         for(let i = 0; i < newNumber; i++){
-            createRating.push(<img src={Icon} alt={climb.rating} className="icons" />)
+            createRating.push(<img key={i} src={Icon} alt={climb.rating} className="icons" />)
             }
         return createRating
         }

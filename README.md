@@ -13,7 +13,6 @@ Use the package manager [npm](https://www.npmjs.com/) to install belay.
 
 ## GET
 
----
 
 ```jsx
 http://localhost:3000/climbs
@@ -23,7 +22,6 @@ Request a list of all of the climbs in the database
 
 ## POST
 
----
 
 ```jsx
 http://localhost:3000/climbs
