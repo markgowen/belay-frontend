@@ -5,17 +5,49 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Reviews from './Reviews';
+import Icon from "../assets/logos/Icon.png";
+
 
 function ClimbDetails() {
-    const [climb, setClimb] = useState({});
+    const {id} = useParams('');
 
-    const {id} = useParams();
+    const [climb, setClimb] = useState({});
+    const [reviews, setReviews] = useState([])
 
     useEffect(() => {
         fetch(`http://localhost:3001/climbs/${id}`)
         .then((response) => response.json())
         .then((climb) => setClimb(climb))
     }, [id])
+
+    useEffect(()=>{
+        fetch(`http://localhost:3001/reviews`)
+        .then(res => res.json())
+        .then(data => {
+            setReviews(data)
+        })
+    }, [])
+
+    const filter = reviews.filter((review) => parseInt(review.climbId) === parseInt(id) ? review: null)
+    const createReviews = filter.map(review => {
+        return(
+            <div>
+                <h3>{review.UserName}</h3>
+                <h4>{review.date}</h4>
+                <p>{review.content}</p>
+            </div>
+            )
+            })
+
+    function ClimbRatingIcon(){
+        const createRating = []
+        const newNumber= parseInt(climb.rating)
+        for(let i = 0; i < newNumber; i++){
+            createRating.push(<img src={Icon} alt={climb.rating} />)
+            }
+        return createRating
+        }
 
     return (
         <Card sx={{ maxWidth: 1000, display: "flex", margin: 'auto', marginTop: 10 }}>
@@ -32,7 +64,7 @@ function ClimbDetails() {
                         {climb.name}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div">
-                        {climb.rating}
+                        {ClimbRatingIcon()}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div">
                         {climb.location}
@@ -61,8 +93,11 @@ function ClimbDetails() {
                     </Typography>
                 </div>
                 <div className='reviews-section'>
-                    <h2>Reviews</h2>
-                    <button>Write Review</button>
+                    <div>
+                        <h2>Reviews</h2>
+                        <Reviews id={id} setReviews={setReviews} reviews={reviews}/>
+                        {createReviews}
+                    </div>
                 </div>
             </CardContent>
       </CardActionArea>
@@ -71,3 +106,5 @@ function ClimbDetails() {
 }
 
 export default ClimbDetails;
+
+

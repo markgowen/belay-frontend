@@ -3,8 +3,9 @@ import ClimbForm from '../components/ClimbForm';
 
 function Share() {
     return (
-        <div>
-            {ClimbForm}
+        <div className='new-route'>
+            <h1>New Route</h1>
+            <ClimbForm />
         </div>
     );
 };

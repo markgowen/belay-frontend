@@ -67,7 +67,7 @@
       "location": "Moab, Utah",
       "difficulty": "5.10c",
       "elevation": "400ft",
-      "type": "Aid",
+      "type": "Trad",
       "pitches": "5 pitches",
       "image": "https://cdn2.apstatic.com/photos/climb/116750004_large_1555605536.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci dapibus ultrices in iaculis nunc sed augue."
@@ -135,7 +135,207 @@
   ],
   "reviews": [
     {
-      "review": ""
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 1,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 2,
+      "climbId": 1,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 3,
+      "climbId": 1,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 2,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 2,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 3,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 3,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 3,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 4,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 4,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 4,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 5,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 5,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 5,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 6,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 2,
+      "climbId": 6,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 3,
+      "climbId": 6,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 7,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 7,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 7,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 8,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 8,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 8,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 9,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 9,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 9,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 10,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 10,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Libero enim sed faucibus turpis in eu mi bibendum. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.",
+      "id": 1,
+      "climbId": 10,
+      "UserName": "UserName",
+      "date": "Jan 1 2010"
     }
   ]
 }
