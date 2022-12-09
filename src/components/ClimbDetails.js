@@ -44,7 +44,7 @@ function ClimbDetails() {
         const createRating = []
         const newNumber= parseInt(climb.rating)
         for(let i = 0; i < newNumber; i++){
-            createRating.push(<img src={Icon} alt={climb.rating} />)
+            createRating.push(<img src={Icon} alt={climb.rating} className="icons" />)
             }
         return createRating
         }
@@ -58,40 +58,50 @@ function ClimbDetails() {
                 image={climb.image}
                 alt="yosemite"
                 />
-            <CardContent>
+            <CardContent sx={{ margin: 10 }} >
                 <div className='climb-details-header'>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {climb.name}
-                    </Typography>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {ClimbRatingIcon()}
-                    </Typography>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <div className='name-rating'>
+                        <Typography sx={{ fontSize: 48, fontWeight: 400 }} gutterBottom variant="h5" component="div">
+                            {climb.name}
+                        </Typography>
+                        <Typography sx={{ paddingLeft: 2 }} gutterBottom variant="h5" component="div">
+                            {ClimbRatingIcon()}
+                        </Typography>
+                    </div>
+                    <Typography sx={{ fontSize: 16, color: "white", paddingTop: "-5px" }} gutterBottom variant="h5" component="div">
                         {climb.location}
                     </Typography>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography sx={{ fontSize: 36, color: "#FF8A00", fontWeight: '400' }}gutterBottom variant="h5" component="div">
                         {climb.difficulty}
                     </Typography>
                 </div>
-                <Typography variant="body2" color="text.secondary">
-                    {climb.description}
-                </Typography>
-                <div className='climb-details-middle'>
-                    <h4>Length</h4>
-                    <h4>Type</h4>
-                    <h4>Elevation</h4>
-                </div>
-                <div className="climb-details-middle">
+                <div className='description' >
                     <Typography variant="body2" color="text.secondary">
-                        {climb.pitches}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {climb.type}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {climb.elevation}
+                        {climb.description}
                     </Typography>
                 </div>
+                    <hr />
+                <div className='climb-details'>
+                    <div className='climb-details-column'>
+                        <h4>Length</h4>
+                        <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
+                            {climb.pitches}
+                        </Typography>
+                    </div>
+                    <div className='climb-details-column'>
+                        <h4>Type</h4>
+                        <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
+                            {climb.type}
+                        </Typography>
+                    </div>
+                    <div className='climb-details-column'>
+                        <h4>Elevation</h4>
+                        <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
+                            {climb.elevation}
+                        </Typography>
+                    </div>
+                </div>
+                    <hr />
                 <div className='reviews-section'>
                     <div>
                         <h2>Reviews</h2>

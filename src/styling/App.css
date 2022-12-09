@@ -187,22 +187,47 @@ nav .active {
 .cardLocation {
     margin-top: -8px;
 }
-
-.climb-details-middle {
-    margin: 25px auto;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: gainsboro;
+.icons {
+    padding: 2px;
 }
-
+hr {
+    border: 1px solid #E6E6E6;
+    background-color: #E6E6E6;
+}
+.climb-details-header {
+    margin-top: -275px;
+    padding-bottom: 75px;
+}
+.name-rating {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+}
+.description {
+    font-size: 24px;
+    padding-bottom: 25px;
+}
 .climb-details {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+.climb-details-column {
+    display: inline-block;
+    width: 20%;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+}
+.climb-details-column h4 {
+    color: gainsboro;
+    font-size: 24px;
+}
+
 .form-line-one {
     margin: 25px auto;
     display: flex;

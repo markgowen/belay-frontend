@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ClimbList from "../components/ClimbList";
-import Search from "../components/Search"
+import Search from "../components/Search";
 
 function Discover() {
     const [climbs, setClimbs] = useState([]);
@@ -19,7 +19,6 @@ function Discover() {
     
     return (
             <div className='discover'>
-                
                 <Search query={query} setQuery={setQuery} />
                 <ClimbList climbs={filteredClimbs} />
             </div>
