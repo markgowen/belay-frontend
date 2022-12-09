@@ -112,7 +112,7 @@ function Reviews({ id, setReviews, reviews }){
                     select
                     label=""
                     name="rating"
-                    sx={{ color: "#1e1e1e", width: "10%", marginBottom: 5 }}
+                    sx={{ color: "#1e1e1e", width: "10%", paddingBottom: 2, paddingLeft: 2 }}
                     value={newReview.rating}
                     onChange={handleChange}
                     helperText="rating"
@@ -133,7 +133,7 @@ function Reviews({ id, setReviews, reviews }){
                     value={newReview.content}
                     onChange={handleChange}
                     variant="standard"
-                    sx={{ width: "100%" }}
+                    sx={{ width: "100%", paddingBottom: 2 }}
                 />
                 <Button sx={{ "&:hover":{backgroundColor: "#E6E6E6"}, backgroundColor: "#FF8A00" }} variant="contained" type="submit">Sumbit</Button>
             </Box>

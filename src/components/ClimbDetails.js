@@ -33,6 +33,7 @@ function ClimbDetails() {
     const createReviews = filter.map(review => {
         return(
             <div className='reviews-section' >
+                <ClimbRatingIcon />
                 <h3>{review.UserName}</h3>
                 <p className='date'>{review.date}</p>
                 <p className='content'>{review.content}</p>
