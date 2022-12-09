@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Modal from '@mui/material/Modal';
+import MenuItem from '@mui/material/MenuItem';
 
 function Reviews({ id, setReviews, reviews }){
 
@@ -11,14 +12,14 @@ function Reviews({ id, setReviews, reviews }){
 
     const current = new Date();
     const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`; 
-    console.log(date)
     
     const [open, setOpen] = React.useState(false);
     const [newReview, setNewReview] = useState({
         "content": '',
         'climbId': id,
         'UserName': '',
-        'date': date
+        'date': date,
+        'rating': '0'
     })
 
     const style = {
@@ -51,10 +52,38 @@ function Reviews({ id, setReviews, reviews }){
                 "content": '',
                 'climbId': id,
                 'UserName': '',
-                'date': date
+                'date': date,
+                'rating': '0'
             })
         })
     }
+
+    const type = [
+        {
+          value: '0',
+          label: '0'
+        },
+        {
+          value: '1',
+          label: '1'
+        },
+        {
+          value: '2',
+          label: '2'
+        },
+        {
+          value: '3',
+          label: '3'
+        },
+        {
+          value: '4',
+          label: '4'
+        },
+        {
+          value: '5',
+          label: '5'
+        }
+      ];
 
 
 
@@ -78,6 +107,23 @@ function Reviews({ id, setReviews, reviews }){
                     onChange={handleChange}
                     variant="standard"
                 />
+                <TextField
+                    id="standard-select-currency"
+                    select
+                    label=""
+                    name="rating"
+                    sx={{ color: "#1e1e1e", width: "10%", marginBottom: 5 }}
+                    value={newReview.rating}
+                    onChange={handleChange}
+                    helperText="rating"
+                    variant="standard"
+                >
+                    {type.map((option) => (
+                        <MenuItem key={option.value} value={option.value}>
+                            {option.label}
+                        </MenuItem>
+                    ))}
+                </TextField>
                 <TextField
                     id="standard-multiline-flexible"
                     helperText="Description"
