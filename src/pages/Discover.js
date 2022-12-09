@@ -16,6 +16,7 @@ function Discover() {
         return climb.name.toLowerCase().includes(query.toLowerCase())
     })
 
+    
     return (
             <div className='discover'>
                 
