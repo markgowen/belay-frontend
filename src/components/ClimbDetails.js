@@ -72,7 +72,7 @@ function ClimbDetails() {
                         <Typography sx={{ fontSize: 16, color: "white", paddingTop: "-5px" }} gutterBottom variant="h5" component="div">
                             {climb.location}
                         </Typography>
-                        <Typography sx={{ fontSize: 36, color: "#FF8A00", fontWeight: '400' }}gutterBottom variant="h5" component="div">
+                        <Typography sx={{ fontSize: 36, color: "white", fontWeight: '400' }}gutterBottom variant="h5" component="div">
                             {climb.difficulty}
                         </Typography>
                     </div>

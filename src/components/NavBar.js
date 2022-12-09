@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 function NavBar() {
     return (
         <nav className="NavBar">
-            <img src={logo} alt="logo" className="logo" />
+            <NavLink to="/" exact={true} ><img src={logo} alt="logo" className="logo" /></NavLink>
             <ul className="nav-links">
                 <li><NavLink to="/" exact={true} >Home</NavLink></li>
                 <li><NavLink to="/discover">Discover</NavLink></li>
