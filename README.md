@@ -1,6 +1,6 @@
 # Belay
 
-Belay is a single application focused on helping climbers discover new and exciting routes around the world.
+Belay is a single page application focused on helping climbers discover new and exciting routes around the world.
 
 ## Installation
 
