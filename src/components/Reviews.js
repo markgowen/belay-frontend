@@ -5,16 +5,20 @@ import TextField from '@mui/material/TextField';
 import Modal from '@mui/material/Modal';
 
 function Reviews({ id, setReviews, reviews }){
-    console.log(id)
+
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+    const current = new Date();
+    const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`; 
+    console.log(date)
     
     const [open, setOpen] = React.useState(false);
     const [newReview, setNewReview] = useState({
         "content": '',
         'climbId': id,
         'UserName': '',
-        'date': ''
+        'date': date
     })
 
     const style = {
@@ -31,7 +35,7 @@ function Reviews({ id, setReviews, reviews }){
     const handleChange = (e) => {
         setNewReview({...newReview, [e.target.name]: e.target.value})
     }
-    console.log(newReview);
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         fetch('http://localhost:3001/reviews', {
@@ -41,14 +45,22 @@ function Reviews({ id, setReviews, reviews }){
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
-            setReviews([...reviews, data])}
-            )
+            setReviews([...reviews, data])
+            handleClose()
+            setNewReview({
+                "content": '',
+                'climbId': id,
+                'UserName': '',
+                'date': date
+            })
+        })
     }
+
+
 
     return (
         <div>
-            <Button sx={{ backgroundColor: "#FF8A00" }} variant="contained" onClick={handleOpen}>Write Review</Button>
+            <Button sx={{"&:hover":{backgroundColor: "#E6E6E6"}, backgroundColor: "#FF8A00" }} variant="contained" onClick={handleOpen}>Write Review</Button>
             <Modal
                 component="form"
                 onSubmit={handleSubmit}
@@ -77,7 +89,7 @@ function Reviews({ id, setReviews, reviews }){
                     variant="standard"
                     sx={{ width: "100%" }}
                 />
-                <Button sx={{ backgroundColor: "#FF8A00" }} variant="contained" type="submit">Sumbit</Button>
+                <Button sx={{ "&:hover":{backgroundColor: "#E6E6E6"}, backgroundColor: "#FF8A00" }} variant="contained" type="submit">Sumbit</Button>
             </Box>
             </Modal>
         </div>

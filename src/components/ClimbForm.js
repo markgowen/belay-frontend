@@ -47,6 +47,17 @@ function ClimbForm() {
         })
         .then(res => res.json())
         .then(data => console.log(data))
+        setFormValues({
+          name: "",
+          rating: 0,
+          location: "",
+          difficulty: "",
+          elevation: "",
+          type: "",
+          pitches: "",
+          image: "",
+          description: ""
+      })
     }
     
     return (
