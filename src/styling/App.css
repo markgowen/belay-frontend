@@ -139,9 +139,10 @@ nav .active {
 }
 
 .discover {
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100vh;
     background-color: #1e1e1e;
-    /* background: url(../assets/images/background.png); */
-    background-size: 100%;
     
 }
 
@@ -190,10 +191,20 @@ nav .active {
 .icons {
     padding: 2px;
 }
+
+.climb-details-page {
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 50px;
+    background: #1e1e1e;
+    background-size: 100%;
+}
+
 hr {
     border: 1px solid #E6E6E6;
     background-color: #E6E6E6;
 }
+
 .climb-details-header {
     margin-top: -275px;
     padding-bottom: 75px;
@@ -206,7 +217,7 @@ hr {
     font-weight: 400;
 }
 .description {
-    font-size: 24px;
+    font-size: 36px;
     padding-bottom: 25px;
 }
 .climb-details {
@@ -238,4 +249,19 @@ hr {
     margin: 50px auto;
     display: flex;
     justify-content: center;
+}
+
+.reviews-section {
+    margin-top: 100px;
+}
+.reviews-section p {
+    font-size: 16px;
+}
+
+.date {
+    color: gainsboro;
+}
+
+.content {
+    padding-bottom: 35px;
 }

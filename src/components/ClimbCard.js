@@ -23,7 +23,7 @@ function ClimbCard({
         const createRating = []
         const newNumber= parseInt(rating)
         for(let i = 0; i < newNumber; i++){
-            createRating.push(<img src={Icon} alt={rating} />)
+            createRating.push(<img src={Icon} alt={rating} className="icon" />)
             }
         return createRating
         }

@@ -32,10 +32,10 @@ function ClimbDetails() {
     const filter = reviews.filter((review) => parseInt(review.climbId) === parseInt(id) ? review: null)
     const createReviews = filter.map(review => {
         return(
-            <div>
+            <div className='reviews-section' >
                 <h3>{review.UserName}</h3>
-                <h4>{review.date}</h4>
-                <p>{review.content}</p>
+                <p className='date'>{review.date}</p>
+                <p className='content'>{review.content}</p>
             </div>
             )
             })
@@ -50,68 +50,76 @@ function ClimbDetails() {
         }
 
     return (
-        <Card sx={{ maxWidth: 1000, display: "flex", margin: 'auto', marginTop: 10 }}>
-            <CardActionArea>
-                <CardMedia
-                component="img"
-                height="368"
-                image={climb.image}
-                alt="yosemite"
-                />
-            <CardContent sx={{ margin: 10 }} >
-                <div className='climb-details-header'>
-                    <div className='name-rating'>
-                        <Typography sx={{ fontSize: 48, fontWeight: 400 }} gutterBottom variant="h5" component="div">
-                            {climb.name}
+        <div className='climb-details-page'>
+            <Card sx={{ maxWidth: 1000, display: "flex", margin: 'auto' }}>
+                <CardActionArea>
+                    <CardMedia
+                    component="img"
+                    height="368"
+                    image={climb.image}
+                    alt="yosemite"
+                    />
+                <CardContent sx={{ margin: 10 }} >
+                    <div className='climb-details-header'>
+                        <div className='name-rating'>
+                            <Typography sx={{ fontSize: 48, fontWeight: 400 }} gutterBottom variant="h5" component="div">
+                                {climb.name}
+                            </Typography>
+                            <Typography sx={{ paddingLeft: 2 }} gutterBottom variant="h5" component="div">
+                                {ClimbRatingIcon()}
+                            </Typography>
+                        </div>
+                        <Typography sx={{ fontSize: 16, color: "white", paddingTop: "-5px" }} gutterBottom variant="h5" component="div">
+                            {climb.location}
                         </Typography>
-                        <Typography sx={{ paddingLeft: 2 }} gutterBottom variant="h5" component="div">
-                            {ClimbRatingIcon()}
-                        </Typography>
-                    </div>
-                    <Typography sx={{ fontSize: 16, color: "white", paddingTop: "-5px" }} gutterBottom variant="h5" component="div">
-                        {climb.location}
-                    </Typography>
-                    <Typography sx={{ fontSize: 36, color: "#FF8A00", fontWeight: '400' }}gutterBottom variant="h5" component="div">
-                        {climb.difficulty}
-                    </Typography>
-                </div>
-                <div className='description' >
-                    <Typography variant="body2" color="text.secondary">
-                        {climb.description}
-                    </Typography>
-                </div>
-                    <hr />
-                <div className='climb-details'>
-                    <div className='climb-details-column'>
-                        <h4>Length</h4>
-                        <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
-                            {climb.pitches}
+                        <Typography sx={{ fontSize: 36, color: "#FF8A00", fontWeight: '400' }}gutterBottom variant="h5" component="div">
+                            {climb.difficulty}
                         </Typography>
                     </div>
-                    <div className='climb-details-column'>
-                        <h4>Type</h4>
-                        <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
-                            {climb.type}
+                    <div className='description' >
+                        <Typography sx={{ fontSize: 24 }} variant="body2" color="text.secondary">
+                            {climb.description}
                         </Typography>
                     </div>
-                    <div className='climb-details-column'>
-                        <h4>Elevation</h4>
-                        <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
-                            {climb.elevation}
-                        </Typography>
+                        <hr />
+                    <div className='climb-details'>
+                        <div className='climb-details-column'>
+                            <h4>Length</h4>
+                            <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
+                                {climb.pitches}
+                            </Typography>
+                        </div>
+                        <div className='climb-details-column'>
+                            <h4>Type</h4>
+                            <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
+                                {climb.type}
+                            </Typography>
+                        </div>
+                        <div className='climb-details-column'>
+                            <h4>Elevation</h4>
+                            <Typography sx={{ fontSize: 20 }} variant="body2" color="text.secondary">
+                                {climb.elevation}
+                            </Typography>
+                        </div>
                     </div>
-                </div>
-                    <hr />
-                <div className='reviews-section'>
-                    <div>
-                        <h2>Reviews</h2>
-                        <Reviews id={id} setReviews={setReviews} reviews={reviews}/>
-                        {createReviews}
+                        <hr />
+                    <div className='reviews-section'>
+                        <div>
+                            <h2>Reviews</h2>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {climb.rating}
+                            </Typography>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {ClimbRatingIcon()}
+                            </Typography>
+                            <Reviews id={id} setReviews={setReviews} reviews={reviews}/>
+                            {createReviews}
+                        </div>
                     </div>
-                </div>
-            </CardContent>
-      </CardActionArea>
-    </Card>
+                </CardContent>
+        </CardActionArea>
+        </Card>
+    </div>
     )
 }
 
