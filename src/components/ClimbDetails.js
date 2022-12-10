@@ -33,7 +33,7 @@ function ClimbDetails() {
     const createReviews = filter.map(review => {
         return(
             <div className='reviews-section' key={review.UserName} >
-                <ClimbRatingIcon />
+                {ClimbRatingIcon(review.rating)}
                 <h3>{review.UserName}</h3>
                 <p className='date'>{review.date}</p>
                 <p className='content'>{review.content}</p>
@@ -41,11 +41,11 @@ function ClimbDetails() {
             )
             })
 
-    function ClimbRatingIcon(){
+    function ClimbRatingIcon(rating){
         const createRating = []
-        const newNumber= parseInt(climb.rating)
+        const newNumber= parseInt(rating)
         for(let i = 0; i < newNumber; i++){
-            createRating.push(<img key={i} src={Icon} alt={climb.rating} className="icons" />)
+            createRating.push(<img key={i} src={Icon} alt={rating} className="icons" />)
             }
         return createRating
         }
@@ -67,7 +67,7 @@ function ClimbDetails() {
                                 {climb.name}
                             </Typography>
                             <Typography sx={{ paddingLeft: 2 }} gutterBottom variant="h5" component="div">
-                                {ClimbRatingIcon()}
+                                {ClimbRatingIcon(climb.rating)}
                             </Typography>
                         </div>
                         <Typography sx={{ fontSize: 16, color: "white", paddingTop: "-5px" }} gutterBottom variant="h5" component="div">
@@ -111,7 +111,7 @@ function ClimbDetails() {
                                 {climb.rating}
                             </Typography>
                             <Typography gutterBottom variant="h5" component="div">
-                                {ClimbRatingIcon()}
+                                {ClimbRatingIcon(climb.rating)}
                             </Typography>
                             <Reviews id={id} setReviews={setReviews} reviews={reviews}/>
                             {createReviews}
